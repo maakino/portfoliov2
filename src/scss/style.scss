@@ -1,1 +1,8 @@
-@import 'abstract/media';
+//Abstract
+@import 'abstract/mixins';
+
+//base
+@import 'base/reset';
+@import 'base/base';
+//layout
+@import 'layout/header';
