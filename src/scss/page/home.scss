@@ -1,0 +1,47 @@
+.home {
+    background-image: url("../img/background/home.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    text-align: center;
+    padding: 60% 2% 0;
+
+    &__left-content {
+        margin-bottom: 50px;
+        line-height: 50px;
+        h1 {
+            font-size: 30px;
+            font-family: "Poppins-Black";
+            margin-bottom: 25px;
+
+        }
+        p {
+            font-size: 18px;
+            font-family: "Poppins-Regular";
+        }
+    }
+    &__btn {
+        color: white;
+        display: block;
+        font-size: 18px;
+        width: 162px;
+        margin: 25px auto;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        text-decoration: none;
+        font-family: "Poppins-Regular";
+
+    }
+
+    //img
+    &__right-content {
+        height: 300px;
+
+        img {
+            height: 100%;
+        }
+    }
+}
