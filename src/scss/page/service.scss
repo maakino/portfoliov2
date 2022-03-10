@@ -1,0 +1,43 @@
+.service {
+    padding: 55px 10px ;
+    background-color: #f0f0f6;
+
+    text-align: center;
+    h3,
+    h2 {
+        text-align: center;
+        color: #716da6;
+        font-family: "Poppins-Black";
+    }
+    h2 {
+        font-size: 19px;
+        margin-bottom: 37px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        line-height: 34px;
+        color: #454545;
+    }
+    &__content-box {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+        background-color: white;
+        border-radius: 5px;
+        margin: auto;
+        text-align: center;
+        padding: 2%;
+margin-bottom: 51px;
+        & * {
+            order: 2;
+        }
+
+        img {
+            margin: auto;
+            order: 1;
+            margin-bottom: 23px;
+        }
+    }
+}
