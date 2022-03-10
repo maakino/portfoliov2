@@ -1,10 +1,13 @@
 .home {
+    background-color: #716DA6;
     background-image: url("../img/background/home.png");
     background-size: cover;
     background-position: center;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
     padding: 60% 2% 0;
@@ -13,35 +16,35 @@
         margin-bottom: 50px;
         line-height: 50px;
         h1 {
-            font-size: 30px;
-            font-family: "Poppins-Black";
+            font-size: 36px;
+            font-family: "Poppins-Bold";
             margin-bottom: 25px;
-
         }
         p {
             font-size: 18px;
-            font-family: "Poppins-Regular";
+            font-family: "Poppins-Medium";
+            margin-bottom: 55px;
+            margin-top: 60px;
         }
     }
     &__btn {
         color: white;
         display: block;
-        font-size: 18px;
-        width: 162px;
+        font-size: 24px;
+        max-width: 169px;
+        max-height: 53px;
         margin: 25px auto;
-        border: 1px solid #ffffff;
+        border: 3px solid #ffffff;
         border-radius: 10px;
         text-decoration: none;
         font-family: "Poppins-Regular";
-
+        a{
+            
+        }
     }
 
     //img
     &__right-content {
-        height: 300px;
-
-        img {
-            height: 100%;
-        }
+     display: none;
     }
 }

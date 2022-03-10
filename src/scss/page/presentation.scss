@@ -1,0 +1,44 @@
+.presentation {
+    background-color: #f0f0f6;
+    display: flex;
+    flex-direction: column-reverse;
+    color: #4f4f50;
+    padding: 8% 1%;
+    line-height: 32px;
+    font-family: "roboto-regular";
+
+    &__txt {
+        h2 {
+            display: none;
+        }
+    }
+    &__txt > :nth-child(2) {
+        font-family: "Poppins-Black";
+        color: #716da6;
+        margin-bottom: 9px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            text-align: center;
+            display: block;
+            width: 132px;
+            height: 37px;
+            color: #716da6;
+            font-size: 14px;
+            margin: 10px auto;
+            border: 1px solid #716da6;
+            border-radius: 10px;
+            text-decoration: none;
+            font-family: "roboto-Medium";
+            line-height: 38px;
+        }
+    }
+
+    &__img {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}

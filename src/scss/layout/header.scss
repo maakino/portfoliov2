@@ -4,11 +4,11 @@
         flex-direction: row;
     }
     position: fixed;
-    background-color: #716da6d3;
+    background-image: url("../img/background/home.png");
     display: flex;
     flex-direction: column;
+
     width: 100vw;
-   
 
     &__logo {
         display: none;
@@ -18,24 +18,23 @@
         text-align: center;
 
         img {
-            width: 49px;
-         margin: auto;
+            margin: auto;
         }
     }
-    &__burger{
+    &__burger {
         width: 49px;
-        margin-top: 10px;
+        margin-left: auto;
+        margin-right: 5px;
     }
 
-
-
-    &__menu-open{
+    &__menu-open {
         background-color: #716da6;
         height: 100vh;
-        .navbar, .navbar__list__social, .header__logo{
+        display: flex;
+        .navbar,
+        .navbar__list__social,
+        .header__logo {
             display: flex;
         }
     }
 }
-
-

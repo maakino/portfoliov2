@@ -1,6 +1,10 @@
 @font-face {
-    font-family: "roboto";
+    font-family: "roboto-Medium";
     src: url(../font/Roboto-Medium);
+}
+@font-face {
+    font-family: "roboto-Regular";
+    src: url(../font/Roboto-Regular);
 }
 
 @font-face {
@@ -8,8 +12,13 @@
     src: url(../font/Poppins-Black.ttf);
 }
 @font-face {
+    font-family: "Poppins-Bold";
+    src: url(../font/Poppins-Bold.ttf);
+}
+
+@font-face {
     font-family: "Poppins-Medium";
-    src: url(../font/Poppins-Medium.ttf);
+    src: url(../font/Poppins-Bold.ttf);
 }
 
 @font-face {
