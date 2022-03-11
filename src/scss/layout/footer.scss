@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4f4f50;
+    padding-bottom: 20px;
+
+    &__nav {
+        ul {
+            line-height: 70px;
+            margin-bottom: 10px;
+
+            a {
+                text-decoration: none;
+                color: #4f4f50;
+                font-size: 18px;
+                font-family: "Poppins-SemiBold";
+            }
+        }
+    }
+    &__slogan {
+        font-size: 20px;
+        font-family: "Poppins-SemiBold";
+    }
+
+    &__social {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 0;
+        color: #4f4f50;
+
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 5px;
+            text-align: center;
+            background: #4f4f50;
+        }
+    }
+    &__copy {
+        font-size: 14px;
+        font-family: "Poppins-Bold";
+        text-align: center;
+    }
+}
