@@ -1,0 +1,85 @@
+.contact {
+    background-image: url("../img/background/contact-mobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    &__form {
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            font-family: "Poppins-Black";
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 90%;
+        max-height: 90%;
+        height: 95%;
+        margin: auto;
+        background: linear-gradient(
+            178.57deg,
+            rgba(107, 106, 158, 0.92) 1.22%,
+            rgba(107, 106, 158, 0.857253) 10.73%,
+            rgba(107, 106, 158, 0) 140.62%
+        );
+    }
+    &__form-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            border: 0;
+            outline: 0;
+            background-color: transparent;
+            color: white;
+            border-bottom: 2px solid white;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.17);
+        }
+
+        textarea{
+            border: 0;
+            outline: 0;
+            background-color: transparent;
+            border-bottom: 2px solid white;
+            width: 173px;
+            height: 19px;
+            color: white;
+            resize: none;
+        }
+
+} //fin contact
+
+
+ 
+ 
+    
+    ::placeholder {
+        color: white;
+        background-color: transparent;
+    }
+    img {
+        margin-right: 10px;
+    }
+    &__button {
+    }
+    &__form-button {
+        text-align: center;
+        display: block;
+        width: 132px;
+        height: 37px;
+        color: #716da6;
+        font-size: 14px;
+        margin: 10px auto;
+        border: 1px solid #716da6;
+        border-radius: 10px;
+        text-decoration: none;
+        font-family: "roboto-Medium";
+        line-height: 38px;
+    }
+    }
+
