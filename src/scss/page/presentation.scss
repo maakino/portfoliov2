@@ -3,6 +3,10 @@
   
 
 .presentation {
+@include media(small){
+    font-size: 24px;
+}
+    
     background-color: #f0f0f6;
     display: flex;
     flex-direction: column-reverse;
@@ -22,6 +26,7 @@
         margin-bottom: 9px;
     }
      &__btn {
+         
         @include media(small) {
             justify-content: center;
             gap:15px;
@@ -36,6 +41,13 @@
                 margin-top: 5px;
     
             }
+            @include media(medium) {
+                width: 262px;
+                height: 62px;
+                font-size: 24px;
+                line-height: 60px;
+            }
+    
             text-align: center;
             display: block;
             width: 132px;
@@ -54,5 +66,7 @@
     &__img {
         margin: auto;
         margin-bottom: 30px;
+        height: 343px;
+        width: auto;
     }
 }
