@@ -1,4 +1,7 @@
 .home {
+    @include media(small){
+        padding: 0;
+    }
     background-color: #716DA6;
     background-image: url("../img/background/home.png");
     background-size: cover;
@@ -13,6 +16,10 @@
     padding: 60% 2% 0;
 
     &__left-content {
+
+        @include media(small){
+            margin-bottom: 0;
+        }
         margin-bottom: 50px;
         line-height: 50px;
         h1 {

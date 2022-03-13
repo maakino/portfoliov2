@@ -1,5 +1,5 @@
 .service {
-    padding: 55px 10px ;
+    padding: 24px 10px;
     background-color: #f0f0f6;
 
     text-align: center;
@@ -17,10 +17,15 @@
         font-size: 18px;
     }
     p {
+        font-family: "roboto-Regular";
         line-height: 34px;
         color: #454545;
     }
     &__content-box {
+        @include media(small) {
+            max-width: 50%;
+        }
+
         display: flex;
         flex-direction: column;
         max-width: 95%;
@@ -29,7 +34,7 @@
         margin: auto;
         text-align: center;
         padding: 2%;
-margin-bottom: 51px;
+        margin-bottom: 51px;
         & * {
             order: 2;
         }

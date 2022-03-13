@@ -1,11 +1,21 @@
 .navbar {
-    @include media(large) {
+    @include media(medium) {
+        display: unset;
+        flex-direction: row;
+        width: 30%;
+        margin: auto;
+        margin-left: 10%;
     }
     display: none;
     flex-direction: column;
 
-
     &__list {
+        @include media(medium) {
+            flex-direction: row;
+            margin-top: 0;
+            justify-content: center;
+            gap: 30px;
+        }
         display: flex;
         flex-direction: column;
         font-size: 24px;
@@ -14,6 +24,9 @@
         margin-top: 20%;
     }
     &__item {
+        @include media(medium) {
+            margin: 0;
+        }
         margin-bottom: 30px;
     }
     &__link {
@@ -21,8 +34,20 @@
         text-decoration: none;
         color: white;
     }
+    
 }
 .navbar__list__social {
+    @include media(medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        gap: 30px;
+        width: 20%;
+        margin: auto;
+    }
+
     display: none;
     justify-content: space-around;
     height: 100px;

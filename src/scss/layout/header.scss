@@ -1,7 +1,9 @@
 .header {
-    @include media(large) {
-        justify-content: space-between;
+    @include media(medium) {
+        
         flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
     position: fixed;
     background-image: url("../img/background/home.png");
@@ -11,6 +13,11 @@
     width: 100vw;
 
     &__logo {
+        @include media(medium) {
+            display: unset;
+            width: 20%;
+        }
+
         display: none;
         flex-direction: column;
         color: white;
@@ -22,6 +29,9 @@
         }
     }
     &__burger {
+        @include media(medium) {
+            display: none;
+        }
         width: 49px;
         margin-left: auto;
         margin-right: 5px;
@@ -34,6 +44,10 @@
         .navbar,
         .navbar__list__social,
         .header__logo {
+            @include media(medium) {
+                display: none;
+            }
+    
             display: flex;
         }
     }
