@@ -7,10 +7,10 @@
     padding: 24px 10px;
 
     &__form {
-        @include media(medium) {
+        @include media(small) {
 
-            height: 90%;
-            margin-top: 5%;
+            height: 80%;
+            margin-top: 13%;
         }
         gap: 10%;
         h2 {

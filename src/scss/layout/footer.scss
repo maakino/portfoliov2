@@ -19,6 +19,9 @@
             margin-bottom: 10px;
 
             a {
+                @include media(medium){
+                    font-size: 24px;
+                }
                 text-decoration: none;
                 color: #4f4f50;
                 font-size: 18px;
@@ -27,6 +30,9 @@
         }
     }
     &__slogan {
+        @include media(medium){
+            font-size: 26px;
+        }
         font-size: 20px;
         font-family: "Poppins-SemiBold";
     }
@@ -34,7 +40,6 @@
     &__social {
         @include media(small){
             width: 50%;
-        
         }
         width: 100%;
         display: flex;
@@ -55,6 +60,9 @@
         }
     }
     &__copy {
+        @include media(medium){
+            font-size: 16px;
+        }
         font-size: 14px;
         font-family: "Poppins-Bold";
         text-align: center;
