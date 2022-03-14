@@ -13,9 +13,12 @@ links.forEach(function(link){
     link.addEventListener('click', toggleNav)
 })
 
+/* contact */
 var textarea = document.querySelector('textarea');
 
 textarea.addEventListener('keydown', autosize);
+
+
 
 function autosize() {
     var el = this;

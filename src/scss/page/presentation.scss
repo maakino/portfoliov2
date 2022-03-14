@@ -64,9 +64,13 @@
     }
 
     &__img {
+        @include media(medium) {
+            height: 343px;
+            width: auto;
+        }
+
         margin: auto;
         margin-bottom: 30px;
-        height: 343px;
-        width: auto;
+     
     }
 }

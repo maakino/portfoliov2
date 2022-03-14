@@ -10,13 +10,25 @@
         font-family: "Poppins-Black";
     }
     h2 {
+        @include media(medium) {
+            font-size: 36px;
+        }
+
         font-size: 19px;
         margin-bottom: 37px;
     }
     h3 {
+        @include media(medium) {
+            font-size: 24px;
+        }
+        margin-bottom: 23px;
         font-size: 18px;
     }
     p {
+        @include media(medium) {
+            font-size: 18px;
+        }
+
         font-family: "roboto-Regular";
         line-height: 34px;
         color: #454545;

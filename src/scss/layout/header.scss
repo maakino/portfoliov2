@@ -17,7 +17,6 @@
             display: unset;
             width: 20%;
         }
-
         display: none;
         flex-direction: column;
         color: white;
@@ -47,7 +46,7 @@
             @include media(medium) {
                 display: none;
             }
-    
+
             display: flex;
         }
     }

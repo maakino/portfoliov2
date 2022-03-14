@@ -1,18 +1,30 @@
-.def{
-    background-color: #716DA6;
+.def {
+    @include media(medium) {
+  
+    }
+
+    background-color: #716da6;
     color: white;
     text-align: center;
-    padding:24px;
-    max-height: 342px;
+    padding: 24px;
 
-    h2{
+
+    h2 {
+        @include media(medium) {
+            font-size: 26px;
+        }
+
         font-size: 17px;
         font-family: "Poppins-Medium";
         margin-bottom: 15px;
     }
-    p{
+    p {
+        @include media(medium) {
+            font-size: 24px;
+        }
+
         font-family: "roboto-Regular";
         font-size: 16px;
-        line-height: 1.50;
+        line-height: 1.5;
     }
 }
