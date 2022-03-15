@@ -1,4 +1,7 @@
 .contact {
+    @include media(large) {
+        background-image: url("../img/background/contact.png");
+    }
     background-image: url("../img/background/contact-mobile.png");
     background-position: center;
     background-size: cover;
@@ -8,23 +11,24 @@
 
     &__form {
         @include media(small) {
-
             height: 80%;
             margin-top: 13%;
+        }
+        @include media(large) {
+            height: 80%;
+            margin-top: 5%;
+            max-width: 70%;
         }
         gap: 10%;
         h2 {
             @include media(medium) {
                 font-size: 36px;
-        
             }
-
             text-align: center;
             font-size: 24px;
             color: white;
             font-family: "Poppins-Black";
         }
-
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -49,9 +53,9 @@
                 max-width: 60%;
                 width: 60%;
             }
-@include media(medium){
-    font-size: 24px;
-}
+            @include media(medium) {
+                font-size: 24px;
+            }
 
             max-width: 60%;
             width: 60%;
@@ -61,13 +65,18 @@
             color: white;
             border-bottom: 2px solid white;
             box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.17);
-            
         }
 
         textarea {
             @include media(small) {
                 max-width: 60%;
                 width: 60%;
+            }
+            @include media(medium) {
+                font-size: 24px;
+            }
+            @include media(large) {
+                overflow: hidden;
             }
             max-width: 60%;
             width: 60%;
@@ -76,13 +85,10 @@
             background-color: transparent;
             border-bottom: 2px solid white;
 
-            height: 19px;
+            height: 38px;
             color: white;
             resize: none;
             font-size: 16px;
-            @include media(medium) {
-                font-size: 24px;
-            }
         }
     } //fin contact
 
@@ -97,7 +103,7 @@
     &__button {
     }
     &__form-button {
-        @include media(medium){
+        @include media(medium) {
             width: 262px;
             height: 62px;
             font-size: 24px;
