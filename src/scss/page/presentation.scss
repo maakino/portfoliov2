@@ -1,12 +1,14 @@
-
-
-  
-
 .presentation {
-@include media(small){
-    font-size: 24px;
-}
-    
+    @include media(small) {
+        font-size: 24px;
+    }
+    @include media(large) {
+        flex-direction: row-reverse;
+        padding: 5%;
+        line-height: 1.5;
+        justify-content: start;
+        align-items: center;
+    }
     background-color: #f0f0f6;
     display: flex;
     flex-direction: column-reverse;
@@ -14,24 +16,33 @@
     padding: 24px 10px;
     line-height: 1.5;
     font-family: "roboto-regular";
-
+    &__txt-marg {
+        margin-top: 56px;
+    }
     &__txt {
+        width: 50%;
         h2 {
             display: none;
         }
     }
     &__txt > :nth-child(2) {
+        @include media(large) {
+            margin-bottom: 48px;
+        }
+
         font-family: "Poppins-Black";
         color: #716da6;
         margin-bottom: 9px;
     }
-     &__btn {
-         
+    &__btn {
         @include media(small) {
             justify-content: center;
-            gap:15px;
+            gap: 15px;
         }
- 
+        @include media(large) {
+            justify-content: flex-start;
+            gap: 46px;
+        }
         display: flex;
         justify-content: space-around;
 
@@ -39,7 +50,6 @@
             @include media(small) {
                 margin: 0;
                 margin-top: 5px;
-    
             }
             @include media(medium) {
                 width: 262px;
@@ -47,7 +57,10 @@
                 font-size: 24px;
                 line-height: 60px;
             }
-    
+            @include media(large) {
+                margin-top: 48px;
+            }
+
             text-align: center;
             display: block;
             width: 132px;
@@ -68,9 +81,13 @@
             height: 343px;
             width: auto;
         }
+        @include media(large) {
+            height: 418px;
+            margin: 0;
+            margin-right: 215px;
+        }
 
         margin: auto;
         margin-bottom: 30px;
-     
     }
 }
