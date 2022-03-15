@@ -1,7 +1,9 @@
 .service {
+    @include media(large){
+        padding: 80px 10px;
+    }
     padding: 24px 10px;
     background-color: #f0f0f6;
-
     text-align: center;
     h3,
     h2 {
@@ -14,6 +16,9 @@
             font-size: 36px;
         }
 
+        @include media(medium) {
+            margin-bottom: 64px;
+        }
         font-size: 19px;
         margin-bottom: 37px;
     }
@@ -33,11 +38,21 @@
         line-height: 34px;
         color: #454545;
     }
+    &__content{
+        @include media(large){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+    }
+    }
     &__content-box {
         @include media(small) {
             max-width: 50%;
+    
+        @include media(large) {
+            max-width: calc(100% / 3);
+            width: 25%;
         }
-
         display: flex;
         flex-direction: column;
         max-width: 95%;
@@ -57,4 +72,5 @@
             margin-bottom: 23px;
         }
     }
+}
 }
