@@ -8,18 +8,23 @@
 
     &__nav {
         ul {
-@include media(small){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15%;
-}
+            @include media(small) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15%;
+
+                @include media(large){
+                    margin-bottom: 24px;
+                }
+            }
+
 
             line-height: 70px;
             margin-bottom: 10px;
 
             a {
-                @include media(medium){
+                @include media(medium) {
                     font-size: 24px;
                 }
                 text-decoration: none;
@@ -30,7 +35,7 @@
         }
     }
     &__slogan {
-        @include media(medium){
+        @include media(medium) {
             font-size: 26px;
         }
         font-size: 20px;
@@ -38,15 +43,18 @@
     }
 
     &__social {
-        @include media(small){
+        @include media(small) {
             width: 50%;
+            gap: 22px;
+        }
+        @include media(large) {
+            justify-content: center;
         }
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin: 40px 0;
         color: #4f4f50;
-
 
         a {
             display: flex;
@@ -60,7 +68,7 @@
         }
     }
     &__copy {
-        @include media(medium){
+        @include media(medium) {
             font-size: 16px;
         }
         font-size: 14px;
