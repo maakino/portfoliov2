@@ -1,6 +1,7 @@
 .contact {
     @include media(large) {
         background-image: url("../img/background/contact.png");
+        height: 75vh;
     }
     background-image: url("../img/background/contact-mobile.png");
     background-position: center;
@@ -17,7 +18,8 @@
         @include media(large) {
             height: 80%;
             margin-top: 5%;
-            max-width: 70%;
+            max-width: 60%;
+          
         }
         gap: 10%;
         h2 {
