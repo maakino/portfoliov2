@@ -4,3 +4,22 @@ body, html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+
+.section{
+    transform: translate(0);
+    opacity: 1;
+    transition: transform 0.7s, opacity 0.8s;
+}
+
+
+.section.not-visible:nth-child(even) {
+    transform: translateX(50px);
+    opacity: 0;
+ }
+ .section.not-visible:nth-child(odd) {
+    transform: translateX(-50px);
+    opacity: 0;
+ }
+
+
