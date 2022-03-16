@@ -30,6 +30,11 @@
         margin-bottom: 30px;
     }
     &__link {
+        border-bottom: 3px solid transparent;
+        transition: border-bottom .3s;
+        &:hover{
+            border-bottom: 3px solid white;
+        }
         line-height: 60px;
         text-decoration: none;
         color: white;
@@ -50,10 +55,14 @@
         width: 20%;
         margin: auto;
     }
-
     display: none;
     justify-content: space-around;
-  
     width: 80%;
     margin: auto;
+img{
+    transition: transform .3s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
 }

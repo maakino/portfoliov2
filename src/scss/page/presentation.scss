@@ -47,6 +47,11 @@
         justify-content: space-around;
 
         a {
+            &:hover{
+                transition: background 0.3s, color 0.3s;
+                background-color: #716da6;
+                color: white;
+            }
             @include media(small) {
                 margin: 0;
                 margin-top: 5px;

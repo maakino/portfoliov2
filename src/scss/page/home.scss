@@ -54,6 +54,11 @@
         }
     }
     &__btn {
+        transition: background .3s, color .3s;
+        &:hover {
+            background-color: white;
+            color: #716da6;
+            }
         @include media(medium) {
             max-width: 201px;
             max-height: 63px;
@@ -62,7 +67,6 @@
             max-width: 201px;
             max-height: 63px;
         }
-
         color: white;
         display: block;
         font-size: 24px;

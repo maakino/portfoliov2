@@ -95,14 +95,18 @@
     ::placeholder {
         color: white;
         background-color: transparent;
-        font-family: "Poppins-regular";
+        font-family: "roboto-Regular";
     }
     img {
         margin-right: 10px;
     }
-    &__button {
-    }
+   
     &__form-button {
+        &:hover{
+            transition: background .3s, color .3s;
+            background-color: #716da6;
+            color: white;
+        }
         @include media(medium) {
             width: 262px;
             height: 62px;
