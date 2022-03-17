@@ -1,93 +1,139 @@
 .contact {
     @include media(large) {
         background-image: url("../img/background/contact.png");
-        height: 75vh;
+        height: auto;
     }
     background-image: url("../img/background/contact-mobile.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    padding: 24px 10px;
+    height: auto;
+    padding: 30px 0;
+    padding: 5% 0px;
+    p {
+        @include media(large) {
+            font-size: 24px;
+        }
+        padding: 0 5px;
+        text-align: center;
+        color: #7f8182;
+        font-family: "roboto-Regular";
+    }
 
     &__form {
         @include media(small) {
-            height: 80%;
-            margin-top: 13%;
+            height: 440px;
+            gap: 5%;
+        }
+        @include media(medium) {
+            margin: 0 auto;
+            gap: 6%;
+            height: 627px;
         }
         @include media(large) {
-            height: 80%;
-            margin-top: 5%;
-            max-width: 60%;
-          
+            height: 627px;
+            margin: 0 auto;
+            max-width: 50%;
+            gap: 6%;
+            padding-top: 10px;
         }
-        gap: 10%;
         h2 {
             @include media(medium) {
                 font-size: 36px;
             }
             text-align: center;
             font-size: 24px;
-            color: white;
-            font-family: "Poppins-Black";
+            color: #8a86b6;
+            font-family: "roboto-Regular";
         }
+        
+        border-radius: 19px;
+        gap: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         max-width: 90%;
-        max-height: 100%;
-        height: 100%;
+        height: 565px;
         margin: auto;
-        background: linear-gradient(
-            178.57deg,
-            rgba(107, 106, 158, 0.92) 1.22%,
-            rgba(107, 106, 158, 0.857253) 10.73%,
-            rgba(107, 106, 158, 0) 140.62%
-        );
+        background-color: white;
     }
+
     &__form-block {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-
+        margin: 0 auto;
+        p {
+            @include media(small) {
+                font-size: 16px;
+            }
+            text-align: left;
+            font-family: "roboto-Regular";
+            color: #2e2d2d;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .input__user {
+            background-image: url(../img/logo/user.svg);
+            background-repeat: no-repeat;
+            background-position: 10px;
+            padding-left: 50px;
+        }
         input {
             @include media(small) {
-                max-width: 60%;
-                width: 60%;
+                max-width: 308px;
+                width: 308px;
+                height: 30px;
             }
             @include media(medium) {
-                font-size: 24px;
+                font-size: 18px;
+                max-width: 571px;
+                width: 571px;
             }
-
-            max-width: 60%;
-            width: 60%;
+            @include media(large) {
+                border-radius: 6px;
+                max-width: 571px;
+                width: 571px;
+            }
+            width: 269px;
             border: 0;
             outline: 0;
-            background-color: transparent;
+            background-color: #928ebb;
             color: white;
             border-bottom: 2px solid white;
             box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.17);
+            background-image: url(../img/logo/mail.svg);
+            background-repeat: no-repeat;
+            background-position: 10px;
+            padding-left: 50px;
+            height: 41px;
         }
 
         textarea {
             @include media(small) {
-                max-width: 60%;
-                width: 60%;
+                max-width: 308px;
+                width: 308px;
+                height: 60px;
             }
             @include media(medium) {
-                font-size: 24px;
-            }
-            @include media(large) {
+                font-size: 18px;
+                height: 97px;
                 overflow: hidden;
             }
-            max-width: 60%;
-            width: 60%;
+            @include media(medium) {
+                max-width: 571px;
+                width: 571px;
+            }
+            background-image: url(../img/logo/message.svg);
+            background-repeat: no-repeat;
+            background-position: 10px 5px;
+            padding-left: 50px;
+            height: 60px;
+            width: 269px;
             border: 0;
             outline: 0;
-            background-color: transparent;
-            border-bottom: 2px solid white;
-
-            height: 38px;
+            background-color: #928ebb;
+            border-radius: 6px;
             color: white;
             resize: none;
             font-size: 16px;
@@ -95,25 +141,34 @@
     } //fin contact
 
     ::placeholder {
-        color: white;
+        color: #b1b1b1;
         background-color: transparent;
         font-family: "roboto-Regular";
+        font-size: 13px;
+        color: white;
+        padding-top: 5px;
     }
     img {
         margin-right: 10px;
     }
-   
+
     &__form-button {
-        &:hover{
-            transition: background .3s, color .3s;
+        &:hover {
+            transition: background 0.3s, color 0.3s;
             background-color: #716da6;
             color: white;
         }
         @include media(medium) {
-            width: 262px;
-            height: 62px;
-            font-size: 24px;
-            line-height: 60px;
+            width: 176px;
+            height: 47px;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        @include media(large) {
+            width: 176px;
+            height: 47px;
+            border: 3px solid #928ebb;
+            line-height: 10px;
         }
         text-align: center;
         display: block;
