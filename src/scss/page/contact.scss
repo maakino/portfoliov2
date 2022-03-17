@@ -46,7 +46,7 @@
             color: #8a86b6;
             font-family: "roboto-Regular";
         }
-        
+
         border-radius: 19px;
         gap: 5%;
         display: flex;
@@ -79,6 +79,7 @@
             background-position: 10px;
             padding-left: 50px;
         }
+
         input {
             @include media(small) {
                 max-width: 308px;
@@ -95,6 +96,7 @@
                 max-width: 571px;
                 width: 571px;
             }
+
             width: 269px;
             border: 0;
             outline: 0;
@@ -148,6 +150,7 @@
         color: white;
         padding-top: 5px;
     }
+
     img {
         margin-right: 10px;
     }
